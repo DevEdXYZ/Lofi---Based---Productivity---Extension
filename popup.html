@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lofi Music Player</title>
+    <script src="lofiplayer.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="rain"></div>
+    <div id="container">
+      <div id="playerControls">
+        <button id="playButton" class="play glow">Play</button>
+        <button id="pauseButton" class="pause glow">Pause</button>
+        <br>
+        <input type="range" min="0" max="1" step="0.001" value="1" id="volumeSlider">
+        <span id="volumePercentage">100%</span>
+      </div>
+      <div id="pomodoroContainer">
+        <div id="timer">
+          <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <button id="startTimer">Start</button>
+        <button id="resetTimer">Reset</button>
+      </div>
+      <div id="todoContainer">
+        <input type="text" id="newTodo" placeholder="Add a new task">
+        <button id="addTodo">Add</button>
+        <ul id="todoList"></ul>
+      </div>
+    </div>
+  </body>
+</html>

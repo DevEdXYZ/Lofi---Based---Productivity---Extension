@@ -1,0 +1,27 @@
+{
+    "name": "Lofi Music Player",
+    "version": "1.0",
+    "description": "A Chrome extension that plays lofi music.",
+    "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "manifest_version": 2,
+    "permissions": [
+      "activeTab",
+      "http://*/*",
+      "https://*/*"
+    ],
+    "browser_action": {
+      "default_title": "Play Lofi Music",
+      "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://usa9.fastcast4u.com; object-src 'self'",
+    "web_accessible_resources": ["lofiplayer.js"],
+    "background": {
+      "page": "background.html"
+    }
+  }
+  
